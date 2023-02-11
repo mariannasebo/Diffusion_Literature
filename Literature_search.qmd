@@ -1,0 +1,221 @@
+---
+title: "Literature2"
+author: "Marianna"
+format: html
+editor: visual
+---
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(litsearchr)
+library(dplyr)
+library(ggplot2)
+library(ggraph)
+library(igraph)
+library(readr)
+library(bibliometrix)
+library(scholar)
+library(citationchaser)
+
+```
+
+Our topic lies in the intersection of policy diffusion, innovation and public policy. Hence, we draw from the policy diffusion theories from Political Science, the literature on the policy reforms - especially on public goods and services - from Economics. Last, insights on governance, coordination and costs will be also drawn from Public Administration. The combination of these fields allows as to explain this research from a multi-model point of view.
+
+To position this research, we conduct first a bibliometric analysis. This way we can explore the research field. As in methodologies, such as meta-analysis or systematic review, the aim of this paper is to summarize the literature using large amounts of literature. As opposed to meta-analyses, bibliometric analysis looks at the structure and the components of a research area through performance analysis and science mapping.
+
+```{r}
+#get diffusion data from lens.org
+M <- convert2df(file="diffusion.csv", dbsource="lens", format="csv")
+results <- biblioAnalysis(M, sep = ";")
+
+
+Packages <- c("dplyr", "httr", "jsonlite")
+lapply(Packages, library, character.only = TRUE)
+
+token<-"QSL9Q9f9FwAvGAh51XaO9vTx9dTTOfBjVKG08I5lWajj5e4N6mvE"
+max_results <- 1000
+
+getLensData<- function(token, query){
+  url <- 'https://api.lens.org/scholarly/search'
+  headers <- c('Authorization' = token, 'Content-Type' = 'application/json')
+  httr::POST(url = url, add_headers(.headers=headers), body = query)
+}
+
+
+request <- paste0('{
+	"query": "(abstract:(policy diffusion) AND field_of_study: (Economics OR Econometrics OR (Local government) OR (Political economy) OR (Policy analysis) OR(Political science) OR (Public administration)))",
+	"size": "',max_results,'",
+	"scroll": "2m"
+}')
+
+
+#"Econometrics", "Economic evaluation", "Economic geography", "Economics", "Economy", "Government", "Local government", "Political economy", "Policy analysis", "Political science", "Public administration", "Social network analysis", 
+data <- getLensData(token, request)
+record_json <- content(data, "text")
+# convert json output from article search to list
+record_list <- fromJSON(record_json) 
+#convert it to a data frame
+record_df <- data.frame(record_list) 
+total<- record_list[["total"]]
+
+
+# if a result contains more than the max number of records per request, use cursor based pagination
+if(total > max_results) {
+  
+  #calculate the number of queries needed for those with more than the max number of results
+  sets <- ceiling(record_list[["total"]] / max_results) 
+  
+  # extract the scroll id from the query to go back to the same search
+  scroll_id <- record_list[["scroll_id"]] 
+  
+  # loop through the sets of results needed to bring back all records into a data frame
+  for (i in 2:sets){ 
+    #extract the latest scroll_id from the last query
+    scroll_id <- record_list[["scroll_id"]] 
+    
+    # new query based on scroll_id and including 'include' for efficiency
+    request <- paste0('{"scroll_id": "', 
+                      scroll_id,
+                      '"
+                      }')
+    
+    # perform article search and extract text results
+    data <- getLensData(token, request)
+    record_json <- httr::content(data, "text")
+    
+    # convert json output from article search to list
+    record_list <- jsonlite::fromJSON(record_json) 
+    new_df <- data.frame(record_list)
+    
+    # bind the latest search data frame to the previous data frame
+    record_df <- dplyr::bind_rows(record_df,new_df) 
+  } 
+}
+
+clean_record<-record_df
+
+clean_record<-clean_record %>% select (scroll_id:data.year_published,
+                                       data.external_ids,
+                                       data.authors:data.fields_of_study,
+                                       data.references:data.scholarly_citations, data.keywords)
+
+
+df_unlisted <- clean_record %>% 
+unnest_wider(c(data.fields_of_study) , names_sep="_") 
+
+df_unlisted<-df_unlisted %>% select(-data.fields_of_study_45, 
+                                    -data.fields_of_study_44,
+                                    -data.fields_of_study_43,
+                                    -data.fields_of_study_42,
+                                    -data.fields_of_study_41,
+                                    -data.fields_of_study_40,
+                                    -data.fields_of_study_39,
+                                    -data.fields_of_study_38,
+                                    -data.fields_of_study_37,
+                                    -data.fields_of_study_36,
+                                    -data.fields_of_study_35, 
+                                    -data.fields_of_study_34,
+                                    -data.fields_of_study_33,
+                                    -data.fields_of_study_32,
+                                    -data.fields_of_study_31,
+                                    -data.fields_of_study_30,
+                                    -data.fields_of_study_29,
+                                    -data.fields_of_study_28,
+                                    -data.fields_of_study_27,
+                                    -data.fields_of_study_26,
+                                    -data.fields_of_study_25, 
+                                    -data.fields_of_study_24,
+                                    -data.fields_of_study_23,
+                                    -data.fields_of_study_22,
+                                    -data.fields_of_study_21,
+                                    -data.fields_of_study_20,
+                                    -data.fields_of_study_19,
+                                    -data.fields_of_study_18,
+                                    -data.fields_of_study_17,
+                                    -data.fields_of_study_16,
+                                    -data.fields_of_study_15, 
+                                    -data.fields_of_study_14,
+                                    -data.fields_of_study_13,
+                                    -data.fields_of_study_12,
+                                    -data.fields_of_study_11)
+
+df_unlisted<-df_unlisted %>% select(-data.source)
+df_filtered<-df_unlisted %>% filter(data.fields_of_study_1=="Economics"|
+                         data.fields_of_study_2=="Economics"|
+                         data.fields_of_study_3=="Economics"|
+                         data.fields_of_study_1=="Political science"|
+                         data.fields_of_study_2=="Political science"|
+                         data.fields_of_study_3=="Political science"|
+                         data.fields_of_study_1=="Public administration"|
+                         data.fields_of_study_2=="Public administration"|
+                         data.fields_of_study_3=="Public administration"|
+                         data.fields_of_study_1=="Local government"|
+                         data.fields_of_study_2=="Local government"|
+                         data.fields_of_study_3=="Local government")
+
+
+doi<-df_filtered %>% unnest(data.external_ids, keep_empty = TRUE)
+doi$value<-ifelse(doi$type=="coreid", 0, doi$value)
+doi<-doi %>% unique()
+doi$value<-ifelse(doi$type=="magid", 0, doi$value)
+doi<-doi %>% unique()
+doi<-spread(data=doi, key=type, value=value, fill=NA)
+doi<-doi %>% select(-magid, -openalex, -pmcid, -pmid, -coreid, -data.keywords)
+doi<-doi %>% unique()
+doi$dup<-duplicated(doi$data.title)
+
+
+
+```
+
+```{r Descriptive Analysis, echo=TRUE, comment=NA}
+
+options(width=100)
+S <- summary(object = results, k = 10, pause = FALSE)
+
+options(width=160)
+M$TC<-M$Citing.Works.Count
+M$TC<-as.numeric(M$TC)
+
+results <- biblioAnalysis(M)
+summary(results, k=10, pause=F, width=130)
+plot(x=results, k=10, pause=F)
+
+
+```
+
+```{r Top-Authors’ Productivity over Time,  comment=NA}
+authorProdOverTime(M, k = 10, graph = TRUE)
+
+
+```
+
+```{r biblionetwork}
+#collaboration network
+NetMatrix <- biblioNetwork(M, analysis = "collaboration",
+network = "authors", sep = ";")
+net <- networkPlot(NetMatrix, n = 30, type = "kamada", Title = "Collaboration",labelsize=0.5)
+
+#co-citation network
+
+NetMatrix <- biblioNetwork(M, analysis = "co-citation",
+network = "references", sep = ";")
+net <- networkPlot(NetMatrix, n = 30, type = "kamada", Title = "Co-Citation",labelsize=0.5)
+
+
+#coupling network
+#co-occurrenes netwrok
+
+NetMatrix <- biblioNetwork(M, analysis = "co-occurrences",
+network = "sources", sep = ";")
+net <- networkPlot(NetMatrix, n = 30, type = "kamada", Title = "Co-Citation",labelsize=0.5)
+```
+
+```{r, comment=NA, fig.height=10, fig.width=10}
+NetMatrix <- biblioNetwork(M, analysis = "co-citation", network = "references", sep = ";")
+net=networkPlot(NetMatrix, n = 50, Title = "Co-Citation Network", type = "fruchterman", size.cex=TRUE, size=20, remove.multiple=FALSE, labelsize=1,edgesize = 10, edges.min=5)
+netstat <- networkStat(NetMatrix)
+summary(netstat,k=10)
+
+
+
+```

@@ -1,0 +1,293 @@
+@article{madlener2007innovation,
+  title={Innovation diffusion, public policy, and local initiative: The case of wood-fuelled district heating systems in Austria},
+  author={Madlener, Reinhard},
+  journal={Energy policy},
+  volume={35},
+  number={3},
+  pages={1992--2008},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{stoneman1994technology,
+  title={Technology diffusion and public policy},
+  author={Stoneman, Paul and Diederen, Paul},
+  journal={The Economic Journal},
+  volume={104},
+  number={425},
+  pages={918--930},
+  year={1994},
+  publisher={Oxford University Press Oxford, UK}
+}
+
+@article{berry2018innovation,
+  title={Innovation and diffusion models in policy research},
+  author={Berry, Frances Stokes and Berry, William D},
+  journal={Theories of the policy process},
+  pages={253--297},
+  year={2018},
+  publisher={Routledge}
+}
+
+@article{de2018diffusion,
+  title={The diffusion and adoption of public sector innovations: A meta-synthesis of the literature},
+  author={De Vries, Hanna and Tummers, Lars and Bekkers, Victor},
+  journal={Perspectives on Public Management and Governance},
+  volume={1},
+  number={3},
+  pages={159--176},
+  year={2018},
+  publisher={Oxford University Press US}
+}
+
+@article{meseguer2009new,
+  title={What is new in the study of policy diffusion?},
+  author={Meseguer, Covadonga and Gilardi, Fabrizio},
+  journal={Review of International Political Economy},
+  volume={16},
+  number={3},
+  pages={527--543},
+  year={2009},
+  publisher={Taylor \& Francis}
+}
+
+@article{boehmke2020spid,
+  title={SPID: A new database for inferring public policy innovativeness and diffusion networks},
+  author={Boehmke, Frederick J and Brockway, Mark and Desmarais, Bruce A and Harden, Jeffrey J and LaCombe, Scott and Linder, Fridolin and Wallach, Hanna},
+  journal={Policy Studies Journal},
+  volume={48},
+  number={2},
+  pages={517--545},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+
+@article{friebe2014exploring,
+  title={Exploring technology diffusion in emerging markets--the role of public policy for wind energy},
+  author={Friebe, Christian A and von Flotow, Paschen and T{\"a}ube, Florian A},
+  journal={Energy Policy},
+  volume={70},
+  pages={217--226},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{osborne2011innovation,
+  title={Innovation, public policy and public services delivery in the UK. The word that would be king?},
+  author={Osborne, Stephen P and Brown, Louise},
+  journal={Public administration},
+  volume={89},
+  number={4},
+  pages={1335--1350},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@article{bingham1978innovation,
+  title={Innovation, bureaucracy, and public policy: A study of innovation adoption by local government},
+  author={Bingham, Richard D},
+  journal={Western Political Quarterly},
+  volume={31},
+  number={2},
+  pages={178--205},
+  year={1978},
+  publisher={Sage Publications Sage CA: Thousand Oaks, CA}
+}
+
+@article{rolfstam2009public,
+  title={Public procurement as an innovation policy tool: the role of institutions},
+  author={Rolfstam, Max},
+  journal={Science and public policy},
+  volume={36},
+  number={5},
+  pages={349--360},
+  year={2009},
+  publisher={Beech Tree Publishing}
+}
+
+@article{eyestone1977confusion,
+  title={Confusion, diffusion, and innovation},
+  author={Eyestone, Robert},
+  journal={American Political Science Review},
+  volume={71},
+  number={2},
+  pages={441--447},
+  year={1977},
+  publisher={Cambridge University Press}
+}
+
+@article{mallinson2021policy,
+  title={Policy innovation adoption across the diffusion life course},
+  author={Mallinson, Daniel J},
+  journal={Policy Studies Journal},
+  volume={49},
+  number={2},
+  pages={335--358},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+
+@article{he2022crossing,
+  title={Crossing the boundaries: Reimagining innovation and diffusion},
+  author={He, Jing and Berry, Frances},
+  journal={Global Public Policy and Governance},
+  volume={2},
+  number={2},
+  pages={129--153},
+  year={2022},
+  publisher={Springer}
+}
+
+@incollection{marsh2013policy,
+  title={Policy diffusion and policy transfer},
+  author={Marsh, David and Sharman, J C},
+  booktitle={New directions in the study of policy transfer},
+  pages={38--57},
+  year={2013},
+  publisher={Routledge}
+}
+
+@book{voor2008micro,
+  title={Micro-foundations for innovation policy},
+  author={voor het Regeringsbele, Wetenschappelijke Raad},
+  year={2008},
+  publisher={Amsterdam University Press}
+}
+
+@article{parkes2013understanding,
+  title={Understanding the diffusion of public bikesharing systems: evidence from Europe and North America},
+  author={Parkes, Stephen D and Marsden, Greg and Shaheen, Susan A and Cohen, Adam P},
+  journal={Journal of Transport Geography},
+  volume={31},
+  pages={94--103},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@article{maggetti2016problems,
+  title={Problems (and solutions) in the measurement of policy diffusion mechanisms},
+  author={Maggetti, Martino and Gilardi, Fabrizio},
+  journal={Journal of Public Policy},
+  volume={36},
+  number={1},
+  pages={87--107},
+  year={2016},
+  publisher={Cambridge University Press}
+}
+
+@phdthesis{bollig2007diffusion,
+  title={Diffusion of innovations: how local governments shape public policy to promote progressive stormwater management},
+  author={Bollig, Shaun R},
+  year={2007}
+}
+
+@book{edler2016handbook,
+  title={Handbook of innovation policy impact},
+  author={Edler, Jakob and Cunningham, Paul and G{\"o}k, Abdullah and others},
+  year={2016},
+  publisher={Edward Elgar Publishing}
+}
+
+@incollection{hartley2013public,
+  title={Public and private features of innovation},
+  author={Hartley, Jean},
+  booktitle={Handbook of innovation in public services},
+  pages={44--59},
+  year={2013},
+  publisher={Edward Elgar Publishing}
+}
+
+@book{osborne2013handbook,
+  title={Handbook of innovation in public services},
+  author={Osborne, Stephen P and Brown, Louise},
+  year={2013},
+  publisher={Edward Elgar Publishing}
+}
+
+@article{patanakul2014examining,
+  title={Examining the roles of government policy on innovation},
+  author={Patanakul, Peerasit and Pinto, Jeffrey K},
+  journal={The Journal of High Technology Management Research},
+  volume={25},
+  number={2},
+  pages={97--107},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{meseguer2004role,
+  title={What role for learning? The diffusion of privatisation in OECD and Latin American countries},
+  author={Meseguer, Covadonga},
+  journal={Journal of Public Policy},
+  volume={24},
+  number={3},
+  pages={299--325},
+  year={2004},
+  publisher={Cambridge University Press}
+}
+
+@article{abi2020covid,
+  title={COVID-19: Insights from innovation economists},
+  author={Abi Younes, George and Ayoubi, Charles and Ballester, Omar and Cristelli, Gabriele and de Rassenfosse, Ga{\'e}tan and Foray, Dominique and Gaul{\'e}, Patrick and Pellegrino, Gabriele and van den Heuvel, Matthias and Webster, Elizabeth and others},
+  journal={Science and public policy},
+  volume={47},
+  number={5},
+  pages={733--745},
+  year={2020},
+  publisher={Oxford University Press}
+}
+
+@article{mytelka2002policy,
+  title={Policy learning and innovation theory: an interactive and co-evolving process},
+  author={Mytelka, Lynn K and Smith, Keith},
+  journal={Research policy},
+  volume={31},
+  number={8-9},
+  pages={1467--1479},
+  year={2002},
+  publisher={Elsevier}
+}
+
+@article{boehmke2004disentangling,
+  title={Disentangling diffusion: The effects of social learning and economic competition on state policy innovation and expansion},
+  author={Boehmke, Frederick J and Witmer, Richard},
+  journal={Political Research Quarterly},
+  volume={57},
+  number={1},
+  pages={39--51},
+  year={2004},
+  publisher={Sage Publications Sage CA: Thousand Oaks, CA}
+}
+
+@article{martin2016twenty,
+  title={Twenty challenges for innovation studies},
+  author={Martin, Ben R},
+  journal={Science and Public Policy},
+  volume={43},
+  number={3},
+  pages={432--450},
+  year={2016},
+  publisher={Oxford University Press}
+}
+
+@article{graham2013diffusion,
+  title={The diffusion of policy diffusion research in political science},
+  author={Graham, Erin R and Shipan, Charles R and Volden, Craig},
+  journal={British journal of political science},
+  volume={43},
+  number={3},
+  pages={673--701},
+  year={2013},
+  publisher={Cambridge University Press}
+}
+
+@article{banerjee2013diffusion,
+  title={The diffusion of microfinance},
+  author={Banerjee, Abhijit and Chandrasekhar, Arun G and Duflo, Esther and Jackson, Matthew O},
+  journal={Science},
+  volume={341},
+  number={6144},
+  pages={1236498},
+  year={2013},
+  publisher={American Association for the Advancement of Science}
+}
