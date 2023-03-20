@@ -1,0 +1,26 @@
+Provider: Silverchair
+Database: Oxford University Press
+Content: text/plain; charset="UTF-8"
+
+TY  - JOUR
+AU  - Cook, Scott J
+AU  - An, Seung-Ho
+AU  - Favero, Nathan
+T1  - Beyond Policy Diffusion: Spatial Econometric Models of Public Administration
+PY  - 2019
+Y1  - 2019/10/17
+DO  - 10.1093/jopart/muy050
+JO  - Journal of Public Administration Research and Theory
+JA  - J Public Adm Res Theory
+VL  - 29
+IS  - 4
+SP  - 591
+EP  - 608
+SN  - 1053-1858
+AB  - Interdependence in the decision-making or behaviors of various organizations and administrators is often neglected in the study of public administration. Failing to account for such interdependence risks an incomplete understanding of the choices made by these actors and agencies. As such, we show how researchers analyzing cross-sectional or time-series-cross-sectional (TSCS) data can utilize spatial econometric methods to improve inference on existing questions and, more interestingly, engage a new set of theoretical questions. Specifically, we articulate several general mechanisms for spatial dependence that are likely to appear in research on public administration (isomorphism, competition, benchmarking, and common exposure). We then demonstrate how these mechanisms can be tested using spatial econometric models in two applications: first, a cross-sectional study of district-level bilingual education spending and, second, a TSCS analysis on state-level healthcare administration. In our presentation, we also briefly discuss many of the practical challenges confronted in estimating spatial models (e.g., weights specification, model selection, effects calculation) and offer some guidance on each.
+Y2  - 3/16/2023
+UR  - https://doi.org/10.1093/jopart/muy050
+ER  - 
+
+
+

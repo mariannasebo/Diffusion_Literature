@@ -8,7 +8,7 @@ bibliography: bibliography.bib
 
 ## Systematic Review
 
-The aim of this article is to present the state of the art on Policy Diffusion and Innovation in Public Policy.
+
 
 ```{r}
 #remotes::install_github("elizagrames/litsearchr", ref="main")
@@ -20,56 +20,6 @@ library(igraph)
 library(readr)
 ```
 
-Our topic lies in the intersection of policy diffusion, innovation and public policy. Hence, we draw from the policy diffusion theories from Political Science, the literature on the policy reforms - especially on public goods and services - from Economics. Last, insights on governance, coordination and costs will be also drawn from Public Administration. The combination of these fields allows as to explain this research from a multi-model point of view.
-
-[@RN2587] In an overview on social networks and diffusion. Structures can influence economic behavior, diffusion of behavior and policies. Epidemiological models can be useful to model economic phenomena, as members interact. Relevant to our research, units or agent might be interested about the proportion of units adopting a given action. For their decision, when a given adoption threshold has been reached, their incentive might increase and they might want to take an action - same or different - from that of the neighbors. Agents that don't adopt early policies can free-ride on the information on the results of the actions of the neighbors. In empirical literature diffusion has been analyzed through the lenses of social networks on several fields. These include: marketing, labor economics, political economy, etc.
-
-The components of the network and the connections between them are important in applications such as contagion, learning and diffusion. Different subgraphs of the network are the components. Hence, if we consider Catalonia as the whole network, the several components are municipalities that form connections between them. These components are network partitions forming path-connected groups of nodes. A network that consists of only one component is a connected network. A network that has several components but doesn't have a cycle (e.g. several trees) is a forest. A special case of a forest is a star network where one node acts as a center, e.g. every link of the network involves that node. The set of nodes that the node $i$ Is linked to is called the neighborhood.
-
-The *degree* of a node is the number of links involving that node.
-
-Early literature about diffusion: Hybrid con adoption Ryan and Gross 1943, Griliches 1957, Drug adoption Coleman Katz, Menzel 1966
-
-Importance of social connections
-
-"opinion leaders" in the study of voting
-
-Whereas, as typically in economics, there is a growing literature with studies on correlations, casual inference might not be possible without a specific setting. Therefor several authors use experiments as in
-
-Various field experiments, such as those by Duflo and Saez (2003), Karlan, Mobius, Rosenblat, and Szeidl (2009), Dupas (2010), Beaman and Magruder (2010), and Feigenberg, Field, and Pande (2010),
-
-Another way to reach casual inference is using sctructural modeling. Banerjee, Chandrasekhar, Duflo, and Jackson (2010)
-
-Newman, Barabasi & Watts (2006),
-
-The Handbook of Social Economics (forthcoming)
-
-There are some popular texts such as Watts (2003) and Barabasi (2004), as well as a history of thought of the sociology literature by Freeman (2006) .
-
-Goyal (2008)
-
-Jackson (2008) synthesizes the analyses of networks from sociology, economics, statistical physics, mathematics, and computer science.
-
-Greenhouse gas emissions trading (ET) system has been an emerging policy to govern global issues. In this setting, multiple authorities are part of a governance system, whereas they scale and interconnectedness might differ, leading to a polycentric setting Ostrom 2010 a 2010b
-
-Social network analysis arose in Sociology (e.g., Boissevain & Mitchell, 1973; Coleman, 1958; Scott, 1991; Wasserman & Faust, 1997; Wellman, 1983) but has recently emerged as a crucial methodology in political science as well (e.g., Bach & Newman, 2010; Cao, 2009, 2010; HafnerBurton, Kahler, & Montgomery, 2009; Hafner-Burton & Montgomery, 2006; Ward, Stovel, & Sacks, 2011).
-
-The setting
-
-The set $N = {1, ..., n}$ is the set of nodes that form part of the network. These nodes in our contexts are municipalities of Catalonia. Two nodes are either connected or not, - they cooperate or they don't. IMC is a reciprocal relationship, all the participants that form part of it have to agree to it. Such relationship can be modelled as un undirected network. Then, we have a graph $(N, g)$ that consists of a set of nodes $N = {1, ..., n}$ and a \$n x n\$ matrix $g$ where $g_{ij}$ stands for the relationship between the nodes. Such relationship can be weighted or unweighted [@RN2590]. To represent the map of IMC in Catalonia as a network is appealing for several reasons. IMC is a relationship that migh be advantageous or disadvantageous. Such relationship can be quantified by common statistical parameter, e.g.: correlations, covariances, regression coefficients, partial correlations etc. Such connections can be seen as lin ks and modelled as paths through the network.
-
-Partial correlation networks can provide valuable hypothesis generating structures, which may reflect potential causal effects to be further examined in terms of conditional independence (Pearl, 2000). When continuous data are multivariate normally distributed, analysing the partial correlations using the Gaussian graphical model (GGM; Costantini et al., 2015; Lauritzen, 1996) is appropriate. If the continuous data are not normally distributed then a transformation (e.g. nonparanormal transformation, Liu, Lafferty, & Wasserman, 2009) can be applied prior to applying the GGM. The GGM can also be used for ordinal data, wherein the network is based on the polychoric correlations instead of partial correlations (Epskamp, 2018). If all the research variables are binary, the Ising Model can be used (van Borkulo et al., 2014). When the data comprise a mixture of categorical and continuous variables, the Mixed Graphical Model can be used to estimate the PMRF (Haslbeck & Waldorp, 2016). Thus, networks can be estimated from various types of data in a flexible manner. Inter-municipal cooperation as a delivery mode is by definition a creates network(s) of local public service delivery in the context of network of municipalities. It has been argued in the literature WARNER, that IMC is complex process of cooperation where members exchange information and learn from each other. From the point of view of the literature of policy diffusion, the question arises how such interdependent structures shapes new policies and regulations. The already existing structures can be affected by processes that include learning, cooperation, competition etc. In case of countryes being affected by policy diffusion, policy diffusion is mainly characterized by the fact that a policies in a given country are systematically conditions by prior policies of another one Simmons et al. (2006, 787).
-
-[@RN2591] Starting from @RN2591, scholars have been interested in policy from a multidimensional point of view. The author asked questions such as how new ideas diffuse, why some are more innovative than others and whether there are certain patterns of innovation. At the time of this research, the frequency of adoption of policies showed an "S" shape, which is similar to an individual's learning curve. Adopters and non-adopters interact. Following this work, the rate of spread of adoptions can be expressed by
-
-$$
-\DeltaA_t = f(A_t)
-$$
-
-In this notation, $A_t$ is the cumulative proportion of adopters of year $t$ and $\Delta A_t = A_{t+1} - A_t$ 
-(see Gray 1973; Berry and Berry 1990) f policy convergence (Bennett 1991) s (Holzinger et al. 2008). y. Spatial econometric modeling has become the method of choice in the literature (Franzese and Hays 2007; Ward and Gleditsch 2008).
-
-Statistical aspects of analyzing netwokr data: Descriptive Statistics of the Networks: Books: • Kolaczyk, E. & Csardi, G. (2014): Statistical Analysis of Network Data with R, Springer. • Newman, N. (2018): Networks, Oxford University Press. • Salter-Townshend, M., White, A., Gollini, I., & Murphy, T. B. (2012): Review of statistical network analysis: models, algorithms, and software, Statistical Analysis and Data Mining, 5(4), 243-264.
 
 In order to conduct a bibliometric analysis on this topic first the Web of Science is used.
 

@@ -1,0 +1,142 @@
+---
+title: "Literature Review"
+author: "Marianna Sebő"
+institute: "Universitat de Barcelona"
+date: last-modified
+toc: true
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+  docx: default
+bibliography: bibliography.bib
+---
+
+```{r}
+#to render all
+#quarto::quarto_render("Literature_Review.qmd", output_format = "all")
+```
+
+The aim of this article is to present the state of the art on Policy Diffusion and Innovation in Public Policy.
+
+Our topic lies in the intersection of policy diffusion, innovation and public policy. Hence, we draw from the policy diffusion theories from Political Science, the literature on the policy reforms - especially on public goods and services - from Economics. Last, insights on governance, coordination and costs will be also drawn from Public Administration. The combination of these fields allows as to explain this research from a multi-model point of view.
+
+Policy innovation happens when a government adopts a new policy [@RN2595]. The mechanisms of the policy adoption can be diverse. The policy innovation can be endogeneous, coming from within the government, the residents or local stakeholders. Also, policy innovation can be a result of policy diffusion, e.g. the result of the spread of adoptions and innovations.
+
+[@RN2587] In an overview on social networks and diffusion. Structures can influence economic behavior, diffusion of behavior and policies. Epidemiological models can be useful to model economic phenomena, as members interact. Relevant to our research, units or agent might be interested about the proportion of units adopting a given action. For their decision, when a given adoption threshold has been reached, their incentive might increase and they might want to take an action - same or different - from that of the neighbors. Agents that don't adopt early policies can free-ride on the information on the results of the actions of the neighbors. In empirical literature diffusion has been analyzed through the lenses of social networks on several fields. These include: marketing, labor economics, political economy, etc.
+
+The components of the network and the connections between them are important in applications such as contagion, learning and diffusion. Different subgraphs of the network are the components. Hence, if we consider Catalonia as the whole network, the several components are municipalities that form connections between them. These components are network partitions forming path-connected groups of nodes. A network that consists of only one component is a connected network. A network that has several components but doesn't have a cycle (e.g. several trees) is a forest. A special case of a forest is a star network where one node acts as a center, e.g. every link of the network involves that node. The set of nodes that the node $i$ Is linked to is called the neighborhood.
+
+The *degree* of a node is the number of links involving that node.
+
+Early literature about diffusion: Hybrid con adoption Ryan and Gross 1943, Griliches 1957, Drug adoption Coleman Katz, Menzel 1966
+
+Importance of social connections
+
+"opinion leaders" in the study of voting
+
+Whereas, as typically in economics, there is a growing literature with studies on correlations, casual inference might not be possible without a specific setting. Therefor several authors use experiments as in
+
+Various field experiments, such as those by Duflo and Saez (2003), Karlan, Mobius, Rosenblat, and Szeidl (2009), Dupas (2010), Beaman and Magruder (2010), and Feigenberg, Field, and Pande (2010),
+
+Another way to reach casual inference is using sctructural modeling. Banerjee, Chandrasekhar, Duflo, and Jackson (2010)
+
+Newman, Barabasi & Watts (2006),
+
+The Handbook of Social Economics (forthcoming)
+
+There are some popular texts such as Watts (2003) and Barabasi (2004), as well as a history of thought of the sociology literature by Freeman (2006) .
+
+Goyal (2008)
+
+Jackson (2008) synthesizes the analyses of networks from sociology, economics, statistical physics, mathematics, and computer science.
+
+Greenhouse gas emissions trading (ET) system has been an emerging policy to govern global issues. In this setting, multiple authorities are part of a governance system, whereas they scale and interconnectedness might differ, leading to a polycentric setting Ostrom 2010 a 2010b
+
+Social network analysis arose in Sociology (e.g., Boissevain & Mitchell, 1973; Coleman, 1958; Scott, 1991; Wasserman & Faust, 1997; Wellman, 1983) but has recently emerged as a crucial methodology in political science as well (e.g., Bach & Newman, 2010; Cao, 2009, 2010; HafnerBurton, Kahler, & Montgomery, 2009; Hafner-Burton & Montgomery, 2006; Ward, Stovel, & Sacks, 2011).
+
+The setting
+
+The set $N = {1, ..., n}$ is the set of nodes that form part of the network. These nodes in our contexts are municipalities of Catalonia. Two nodes are either connected or not, - they cooperate or they don't. IMC is a reciprocal relationship, all the participants that form part of it have to agree to it. Such relationship can be modelled as un undirected network. Then, we have a graph $(N, g)$ that consists of a set of nodes $N = {1, ..., n}$ and a \$n x n\$ matrix $g$ where $g_{ij}$ stands for the relationship between the nodes. Such relationship can be weighted or unweighted [@RN2590]. To represent the map of IMC in Catalonia as a network is appealing for several reasons. IMC is a relationship that migh be advantageous or disadvantageous. Such relationship can be quantified by common statistical parameter, e.g.: correlations, covariances, regression coefficients, partial correlations etc. Such connections can be seen as lin ks and modelled as paths through the network.
+
+Partial correlation networks can provide valuable hypothesis generating structures, which may reflect potential causal effects to be further examined in terms of conditional independence (Pearl, 2000). When continuous data are multivariate normally distributed, analysing the partial correlations using the Gaussian graphical model (GGM; Costantini et al., 2015; Lauritzen, 1996) is appropriate. If the continuous data are not normally distributed then a transformation (e.g. nonparanormal transformation, Liu, Lafferty, & Wasserman, 2009) can be applied prior to applying the GGM. The GGM can also be used for ordinal data, wherein the network is based on the polychoric correlations instead of partial correlations (Epskamp, 2018). If all the research variables are binary, the Ising Model can be used (van Borkulo et al., 2014). When the data comprise a mixture of categorical and continuous variables, the Mixed Graphical Model can be used to estimate the PMRF (Haslbeck & Waldorp, 2016). Thus, networks can be estimated from various types of data in a flexible manner. Inter-municipal cooperation as a delivery mode is by definition a creates network(s) of local public service delivery in the context of network of municipalities. It has been argued in the literature WARNER, that IMC is complex process of cooperation where members exchange information and learn from each other. From the point of view of the literature of policy diffusion, the question arises how such interdependent structures shapes new policies and regulations. The already existing structures can be affected by processes that include learning, cooperation, competition etc. In case of countryes being affected by policy diffusion, policy diffusion is mainly characterized by the fact that a policies in a given country are systematically conditions by prior policies of another one Simmons et al. (2006, 787).
+
+[@RN2592] Walkers 1969 pioneering study.
+
+[@RN2591] Starting from @RN2591, scholars have been interested in policy from a multidimensional point of view. The author asked questions such as how new ideas diffuse, why some are more innovative than others and whether there are certain patterns of innovation. At the time of this research, the frequency of adoption of policies showed an "S" shape, which is similar to an individual's learning curve. Adopters and non-adopters interact. Following this work, the rate of spread of adoptions can be expressed by
+
+$$
+\DeltaA_t = f(A_t)
+$$
+
+In this notation, $A_t$ is the cumulative proportion of adopters of year $t$ and $\Delta A_t = A_{t+1} - A_t$ (see Gray 1973; Berry and Berry 1990) f policy convergence (Bennett 1991) s (Holzinger et al. 2008). y. Spatial econometric modeling has become the method of choice in the literature (Franzese and Hays 2007; Ward and Gleditsch 2008).
+
+Statistical aspects of analyzing netwokr data: Descriptive Statistics of the Networks: Books: • Kolaczyk, E. & Csardi, G. (2014): Statistical Analysis of Network Data with R, Springer. • Newman, N. (2018): Networks, Oxford University Press. • Salter-Townshend, M., White, A., Gollini, I., & Murphy, T. B. (2012): Review of statistical network analysis: models, algorithms, and software, Statistical Analysis and Data Mining, 5(4), 243-264.
+
+[@RN2595] Subnational governments of federal systems, the important role of municipalities, and decentralization serve as an interesting opportunity to experiment. Experimenting with policies can be advantageous for varios reasons. Given the same national jurisdiction and similar context, the possibility to experiment with policies can be observed by other municipalities. The leaders that adopt first such policies and the laggerds - who adopt them later - are not independent from each other. Neighborhood affects arise, e.g.: learning, competition, imitation or coercion. Whether the adoption of policy is a result of one of these mechanisms can tell a lot about the suitability and the expected effects of the policy. Policies, that result from learning, might be more effective. When learning, a municipality observes the outcome of the policy adopted by the leader. Based on the observed outcomes decides whether to introduce the policy or not. On the other hand, imitation doesn't focus on the result of the policy, if focuses on the municipality that adopted the policy. This is normally the case of small municipalities that look at what a bigger municipality of the neighborhood is doing. Importantly, imitation is not expected to produce the desirable outcome if the municipality that imitates and that is being imitated are different and not directly comparable. Coercion is a mechanims induced by a higher-tier government which -if not all the municipalities are equal- is not expected to be optimal. Last, scholars distinguish competition, which can be either advantageous or disadvantageous depending the spillover effects in place. The authors of this paper investigate the antismoking laws across the US based on 675 largest cities over the period of 1975 and 2000. As expected, the leaders tend to be bigger cities, for the smaller ones learning is difficult, they have a hihger probability to engage in competition or imitation. They have also less influence on higher-tier decision - coercion can be an issue for them.
+
+As @RN2596 argues, a social network analysis can be a suitable approach to analyse policy diffusion for several reasons. Social networks allow for the spread of a phenomena without allowing for not rational agents. Copying a neighbor is possible even if it not advantageous for the imitating municipality. Diffusion of policies arise even if there is a lack of demand or resources.
+
+@RN2598 explain the adoption of policies based on both internal and external factors.
+
+@RN2599 analyze policy diffusion based on textual similarities in party manifestos using observations from nineteen Western countries from 1960 to 2016. Via text-as-data approach and machine learning (?) techniques. The authors move beyond the left-right position and estimate textual similarities based on the Manifesto Corpus (Krause et al. 2018). The authors show that the rhetoric of parties is mostly diffused within the borders of a country or of a region. Also, the diffusion is higher between parties that belong to the same family of nations-. The authors don't find much relation between diffusion and benefits for the parties - hence the learning mechanims is questions. On the other hand, they show evidence for a "herd behavior"
+
+\--Here we could test whether it is learning, imitations, or competition.
+
+What we will look at is first, the party's past, second, the domestic competitios, third, governing parties abroad, 4, EP factions, 5, transnational party organizations, other parties of the same family of nationas.
+
+@RN2600 argue that interdependence in decision-making behaviors of organizations and administrators is high importace. Using spacial econometric techniques, the authors distinguish between isomorphims, competition, benchmarking and common exposure mechanisms of spatial interdependence. In this paper, the authors aim at identifying the mechanisms behind commonalities and spatial dependence in public administration, and empirically analyze the questions using spatial econometric methods. Specifically, the authors look at budgetary decisions in Texas school districts. Then, including information on geographic proximity, district size are related to similarities. Additionally, the authors analyse public health administration dataset with spatial econometric techniques.
+
+@RN2601 In their review the authors look at five types of external determination model: National interaction model, regional diffusion model, leader-laggard models, convergence models, vertical penetration models. According to this review, the main subject of the studies have been how diffusion of policies affects the adoptopn of a policy.
+
+Shipan and Volden (2012) that the literature on policy diffusion should be extended beyond the topics of policy adoption.
+
+@RN2602 Diffusion mechanism involve learning, copyong or strategic interaction such as competition. Such strategic interaction and competitive behavior has been at the heart of economics and used to explain how markets work, however, they have been not utilized to explain policy diffusion until recently. The authors the diffusion analyse local option sales taxes, which at the time of the analysis took up the biggest chunk of own source revenues then any other policy. Leaders have a different behavior then followers as they follo other leaders but are responsive to the followers. Panel data methods are used.
+
+Christina Prell: The academic interest towards networks is large. Journals such as Connections, Journal of Social Structure and Social Networks focus exclusively on them
+
+To check:
+
+Orenstein 2003, Rogers 2003, 2x True and Mintrom 2001 Fredkin 1993 Kilduff and Tsai 2003 Passy 2003 Collier Messick 1975 1983 Mooney and Lee 1995 Walker 1968 Comola Prina 2014 Braun Gilardi 2006 2 X Simmons Elkins 2004 Leenders 2002 Leifeld Cranmer 2016 Gilardi 2012 Berry and Berry 2007 Chyzh 2016 Haim 2016 Mohrenberg 2017 Berry and Berry 1990, Berry and Berry 2014 Wejnert 2002, Kapucu, Hu, Khosa 2017. Yi, Berry Chen forthcoming Marsh Sharman 2009 Mintrpm 1997 Mintrom Vergari 1998
+Appuhami et al., [2011](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR1 "Appuhami, R., Perera, S., & Perera, H. (2011). Coercive policy diffusion in a developing country: The case of Public-Private Partnerships in Sri Lanka. Journal of Contemporary Asia, 41(3), 431–451. 
+                  https://doi.org/10.1080/00472336.2011.582713
+                  
+                "); Bell & Feng, [2019](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR6 "Bell, S., & Feng, H. (2019). Policy diffusion as empowerment: Domestic agency and the institutional dynamics of monetary policy diffusion in China. Globalizations, 16(6), 919–933. 
+                  https://doi.org/10.1080/14747731.2018.1560190
+                  
+                "); Betz & Neff, [2017](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR8 "Betz, J., & Neff, D. (2017). Social policy diffusion in South Asia. Journal of Asian Public Policy, 10(1), 25–39. 
+                  https://doi.org/10.1080/17516234.2016.1258520
+                  
+                "); Butler et al., [2017](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR11 "Butler, D. M., Volden, C., Dynes, A. M., & Shor, B. (2017). Ideology, learning, and policy diffusion: Experimental evidence. American Journal of Political Science, 61(1), 37–49. 
+                  https://doi.org/10.1111/ajps.12213
+                  
+                "); Crow, [2012](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR16 "Crow, D. A. (2012). Policy diffusion and innovation: Media and experts in Colorado recreational water rights. Journal of Natural Resources Policy Research, 4(1), 27–41. 
+                  https://doi.org/10.1080/19390459.2012.642635
+                  
+                "); Gu, [2016](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR28 "Gu, J. (2016). Spatial diffusion of social policy in China: Spatial convergence and neighborhood interaction of vocational education. Applied Spatial Analysis and Policy, 9(4), 503–527. 
+                  https://doi.org/10.1007/s12061-015-9161-3
+                  
+                "); Hsu & Tung-Wen Sun, [2014](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR30 "Hsu, K.-M., & Tung-Wen Sun, M. (2014). Policy diffusion and public service motivation: An exploratory study of the Bookstart programme in Taiwan. Journal of Asian Public Policy, 7(2), 179–190. 
+                  https://doi.org/10.1080/17516234.2014.894901
+                  
+                "); Kammerer & Namhata, [2018](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR32 "Kammerer, M., & Namhata, C. (2018). What drives the adoption of climate change mitigation policy? A dynamic network approach to policy diffusion. Policy Sciences, 51(4), 477–513. 
+                  https://doi.org/10.1007/s11077-018-9332-6
+                  
+                "); Kim, [2013](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR33 "Kim, D.-R. (2013). Local government policy diffusion in a decentralised system: Childbirth support policy in South Korea. Local Government Studies, 39(4), 582–599. 
+                  https://doi.org/10.1080/03003930.2012.726200
+                  
+                "); Matisoff & Edwards, [2014](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR46 "Matisoff, D. C., & Edwards, J. (2014). Kindred spirits or intergovernmental competition? The innovation and diffusion of energy policies in the American states (1990–2008). Environmental Politics, 23(5), 795–817. 
+                  https://doi.org/10.1080/09644016.2014.923639
+                  
+                "); Risse, [2017](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR56 "Risse, T. (2017). De-centring the European union: Policy diffusion among European regional organizations–a comment. European Review of History: Revue Européenne D’histoire, 24(3), 472–483. 
+                  https://doi.org/10.1080/13507486.2017.1282434
+                  
+                ") Shipan VOlden 2012, Berry and Berry 2007, Esteller-More and Sole-Olle 2001
+
+network autocorrelation models
+
+\[Figure 1, draw a map that involves the intensities\]
