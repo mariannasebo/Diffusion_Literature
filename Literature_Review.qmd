@@ -21,11 +21,19 @@ bibliography: bibliography.bib
 #quarto::quarto_render("Literature_Review.qmd", output_format = "all")
 ```
 
-The aim of this article is to present the state of the art on Policy Diffusion and Innovation in Public Policy.
+## Introduction
 
-Our topic lies in the intersection of policy diffusion, innovation and public policy. Hence, we draw from the policy diffusion theories from Political Science, the literature on the policy reforms - especially on public goods and services - from Economics. Last, insights on governance, coordination and costs will be also drawn from Public Administration. The combination of these fields allows as to explain this research from a multi-model point of view.
+The aim of this review is to present the state of the art on Policy Diffusion and Innovation in Public Policy. Our topic lies in the intersection of policy diffusion, innovation and public policy. Hence, we draw from the policy diffusion theories from Political Science, the literature on the policy reforms - especially on public goods and services - from Economics. Last, insights on governance, coordination and costs will be also drawn from Public Administration. The combination of these fields allows as to explain this research from a multi-model point of view. Apart from focusing on policy diffusion in general, we pay attention to how diffusion has been looked at from the point of view of network analysis. Specifically,we pay attention the area of social economic network analysis and statistical network analysis
 
-Policy innovation happens when a government adopts a new policy [@RN2595]. The mechanisms of the policy adoption can be diverse. The policy innovation can be endogeneous, coming from within the government, the residents or local stakeholders. Also, policy innovation can be a result of policy diffusion, e.g. the result of the spread of adoptions and innovations.
+## Policy Diffusion and  Innovation
+
+Diffusion has historically been of concern of anthropologists and sociologists.
+
+One of the first papers that looked at diffusion of innovation among cities by @RN2603 which demonstrated evidence of city-to-city diffusion of policies in the US. Based on the application of interpersonal influence to questions of intercity influence and adoption of innovation by municipalities. In this paper, published in 1966, the author looked at the adoption of the policy of fluoridation. Based on the literature on interpersonal relations and influence, the author describes a geographic diffusion hypothesis expecting that nearby cities influence each other when adopting innovations. In that paper, the author proposes that such diffusion resembles a network that has several centers and geographic clustering of adoption happens. In this sense, geographic proximity is only important because it can used as a proxy for communication between the cities. The policy at the heart of this paper examines the diffusion of fluoridation in American cities from 1945 to 1960. The author finds that the adoption of this policy happens in stages - at the beginning experimentation was important and the cities that adopted the policy ware spread across the country. In the second stage, the neighboring cities of the early adopters started to innovate. In the last two stages spreading continued reaching also cities that were initially resisting the policy. The authors pose the question about the opinion leaders and call for further research about why big and high-status cities were the leading innovators.
+
+Policy innovation happens when a government adopts a new policy [@RN2595]. The mechanisms of the policy adoption can be diverse. The policy innovation can be endogenous, coming from within the government, the residents or local stakeholders. Also, policy innovation can be a result of policy diffusion, e.g. the result of the spread of adoptions and innovations. The mechanisms of policy diffusion identified by the author include learning, economic competition, imitation and coercion.
+
+ - Gray (1973) - which developed the S-shaped curve model of policy diffusion - Walker (1969) - which introduced the concept of "policy transfer" and identified factors that facilitate or hinder it - Berry and Berry (1990) - which developed a typology of policy diffusion mechanisms - Berry and Baybeck (2005) - which proposed a framework for analyzing the conditions under which different mechanisms of policy diffusion operate - Mintrom (1997a) - which examined the role of policy entrepreneurs in promoting policy diffusion - Mooney and Lee (1995, 1999) - which studied the diffusion of abortion and death penalty policies across US states - Haider-Markel (2001) - which analyzed the diffusion of same-sex marriage bans across US states - Balla (2001) - which examined the diffusion of HMO regulations across US states - Boehmke (2005) - which investigated the role of the initiative process in policy diffusion.
 
 [@RN2587] In an overview on social networks and diffusion. Structures can influence economic behavior, diffusion of behavior and policies. Epidemiological models can be useful to model economic phenomena, as members interact. Relevant to our research, units or agent might be interested about the proportion of units adopting a given action. For their decision, when a given adoption threshold has been reached, their incentive might increase and they might want to take an action - same or different - from that of the neighbors. Agents that don't adopt early policies can free-ride on the information on the results of the actions of the neighbors. In empirical literature diffusion has been analyzed through the lenses of social networks on several fields. These include: marketing, labor economics, political economy, etc.
 
@@ -69,10 +77,6 @@ Partial correlation networks can provide valuable hypothesis generating structur
 
 [@RN2591] Starting from @RN2591, scholars have been interested in policy from a multidimensional point of view. The author asked questions such as how new ideas diffuse, why some are more innovative than others and whether there are certain patterns of innovation. At the time of this research, the frequency of adoption of policies showed an "S" shape, which is similar to an individual's learning curve. Adopters and non-adopters interact. Following this work, the rate of spread of adoptions can be expressed by
 
-$$
-\DeltaA_t = f(A_t)
-$$
-
 In this notation, $A_t$ is the cumulative proportion of adopters of year $t$ and $\Delta A_t = A_{t+1} - A_t$ (see Gray 1973; Berry and Berry 1990) f policy convergence (Bennett 1991) s (Holzinger et al. 2008). y. Spatial econometric modeling has become the method of choice in the literature (Franzese and Hays 2007; Ward and Gleditsch 2008).
 
 Statistical aspects of analyzing netwokr data: Descriptive Statistics of the Networks: Books: • Kolaczyk, E. & Csardi, G. (2014): Statistical Analysis of Network Data with R, Springer. • Newman, N. (2018): Networks, Oxford University Press. • Salter-Townshend, M., White, A., Gollini, I., & Murphy, T. B. (2012): Review of statistical network analysis: models, algorithms, and software, Statistical Analysis and Data Mining, 5(4), 243-264.
@@ -99,12 +103,18 @@ Shipan and Volden (2012) that the literature on policy diffusion should be exten
 
 Christina Prell: The academic interest towards networks is large. Journals such as Connections, Journal of Social Structure and Social Networks focus exclusively on them
 
+Empirical Background on Social and Economic Networks
+
+One of the tools to estimate social networks is via surveys of the agents. Yet, agents might want to conceal their relationship, the intensity of these relationship might change over time, therefor several analysis of social networks is also based on anecdotal evidence. One of the most studied area of social economic networks is concerned with obtaining emplyment. Myers and Schultz, Pellizzarri, Corcoran, Darchener and Duncan. Social interactions also play an important role in conducting crime: Reiss; Glaeser, Sacerdote, Scheinkamn.
+
+One of the most important roles of social networks is to the flow of information. The capability of agents to learn from each other affects many aspects of their lives, starting from their employment, consumption or political opinion or voting behavior. One of the first studies on the diffusion of innovation Ryan and Gross; Hagerstrand; Rogers;
+
+Coleman, Katz and Menzel look at the adoption of a new drug
+
 To check:
 
-Orenstein 2003, Rogers 2003, 2x True and Mintrom 2001 Fredkin 1993 Kilduff and Tsai 2003 Passy 2003 Collier Messick 1975 1983 Mooney and Lee 1995 Walker 1968 Comola Prina 2014 Braun Gilardi 2006 2 X Simmons Elkins 2004 Leenders 2002 Leifeld Cranmer 2016 Gilardi 2012 Berry and Berry 2007 Chyzh 2016 Haim 2016 Mohrenberg 2017 Berry and Berry 1990, Berry and Berry 2014 Wejnert 2002, Kapucu, Hu, Khosa 2017. Yi, Berry Chen forthcoming Marsh Sharman 2009 Mintrpm 1997 Mintrom Vergari 1998
-Appuhami et al., [2011](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR1 "Appuhami, R., Perera, S., & Perera, H. (2011). Coercive policy diffusion in a developing country: The case of Public-Private Partnerships in Sri Lanka. Journal of Contemporary Asia, 41(3), 431–451. 
-                  https://doi.org/10.1080/00472336.2011.582713
-                  
+Orenstein 2003, Rogers 2003, 2x True and Mintrom 2001 Fredkin 1993 Kilduff and Tsai 2003 Passy 2003 Collier Messick 1975 1983 Mooney and Lee 1995 Walker 1968 Comola Prina 2014 Braun Gilardi 2006 2 X Simmons Elkins 2004 Leenders 2002 Leifeld Cranmer 2016 Gilardi 2012 Berry and Berry 2007 Chyzh 2016 Haim 2016 Mohrenberg 2017 Berry and Berry 1990, Berry and Berry 2014 Wejnert 2002, Kapucu, Hu, Khosa 2017. Yi, Berry Chen forthcoming Marsh Sharman 2009 Mintrpm 1997 Mintrom Vergari 1998 Appuhami et al., \[2011\](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR1 "Appuhami, R., Perera, S., & Perera, H. (2011). Coercive policy diffusion in a developing country: The case of Public-Private Partnerships in Sri Lanka. Journal of Contemporary Asia, 41(3), 431--451. https://doi.org/10.1080/00472336.2011.582713
+
                 "); Bell & Feng, [2019](https://link.springer.com/article/10.1007/s11115-022-00618-9#ref-CR6 "Bell, S., & Feng, H. (2019). Policy diffusion as empowerment: Domestic agency and the institutional dynamics of monetary policy diffusion in China. Globalizations, 16(6), 919–933. 
                   https://doi.org/10.1080/14747731.2018.1560190
                   
@@ -136,6 +146,8 @@ Appuhami et al., [2011](https://link.springer.com/article/10.1007/s11115-022-006
                   https://doi.org/10.1080/13507486.2017.1282434
                   
                 ") Shipan VOlden 2012, Berry and Berry 2007, Esteller-More and Sole-Olle 2001
+
+Marsden, Bernard, bernard el al
 
 network autocorrelation models
 
